@@ -116,6 +116,11 @@ main {
     padding-top: 5rem;
     display: flex;
     justify-content: center;
+    font-style: italic;
+}
+
+.titulo h1{
+    font-size: 4rem;
 }
 
 .tarjetas {
@@ -138,8 +143,93 @@ main {
     width: 100%;
 }
 
+/* ------------------Eventos----------------- */
 
+.contenedor_eventos {
+    padding-bottom: 3rem;
+}
 
+.titulo_eventos {
+    color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-family: borel;
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+
+.texto_eventos {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+.contacto_eventos {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.imagen_eventos {
+    text-align: center;
+    padding: 1rem;
+    width: auto;
+}
+
+.imagen_eventos img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+/* ------------------Nosotros----------------- */
+
+.contenedor_nosotros {
+    padding-bottom: 3rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.imagen_nosotros {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+.texto_nosotros {
+    width: 70%;
+    height: auto;
+    color: white;
+}
+
+/* ------------------Contacto----------------- */
+
+.contenedor_contacto {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 3rem;
+}
+
+.texto_contacto > div {
+    color: white;
+}
+
+.formulario_contacto {
+    padding: 3rem;
+    background-color: black;
+    width: 80%;
+}
+
+.boton_formulario {
+    margin-top: 1rem;
+}
 /* ------------------footer----------------- */
 
 .footer {
@@ -157,7 +247,6 @@ main {
     grid-area: imagen_footer;
     display: flex;
     padding-left: 1rem;
-
 }
 
 .listaF {
@@ -202,7 +291,6 @@ main {
 
     .logo_menu img {
         width: 150px;
-
     }
 }
 
@@ -249,6 +337,16 @@ main {
     .logo_redes_footer {
         display: flex;
         align-items: center;
+    }
+
+    .contenedor_nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contenedor_contacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
