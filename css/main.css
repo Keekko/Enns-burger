@@ -1,0 +1,260 @@
+ @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: borel;
+    font-size: 3rem;
+}
+
+main {
+    background-image: url("../img/backround.jpg");
+    background-size: cover;
+}
+
+/* -----------Menu principal--------------- */
+
+.header_foto {
+    background-image: url(../img/header.png);
+    height: 70px;
+    width: auto;
+}
+
+.menu_principal_desktop {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    height: 57px; 
+}
+
+.menu_lista_desktop {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.menu_logo_desktop { 
+    text-align: center;
+    z-index: 1;
+}
+
+.menu_lista_desktop a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-inline: 30px;
+}
+
+.menu_principal {
+    background-color: black;
+    height: 57px;
+    width: auto;
+}
+
+.navbar-toggler{
+    height: 40px;
+}
+
+.logo_menu {    
+    position: absolute;
+    z-index: 1;
+}
+
+.foto_carrusel {
+    width: 100%;
+    height: 100%;
+}
+
+.menu_principal_nav {
+    width: 100%;
+}
+
+.logo_redes {
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0;
+}
+
+/* -----------------inicio-------------- */
+
+.carousel-inner {
+    object-fit: cover;
+    object-position: top;
+  
+  }
+
+.locales {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    color: white;
+}
+.mapa {
+    padding: 2rem;
+    background-color: black;
+}
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* ------------------catalogo----------------- */
+
+.titulo {
+    color: white;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjetas {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3rem;
+}
+
+.productos h4 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: borel;
+}
+
+.producto_imagen {
+    width: 100%;
+}
+
+
+
+/* ------------------footer----------------- */
+
+.footer {
+    width: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen_footer listaF"
+    "imagen_footer logo_redes_footer";
+}
+
+.imagen_footer {
+    grid-area: imagen_footer;
+    display: flex;
+    padding-left: 1rem;
+
+}
+
+.listaF {
+    grid-area: listaF;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+}
+
+.logo_redes_footer {
+    grid-area: logo_redes_footer;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lrf {
+    font-size: 2rem;
+    color: grey
+}
+
+/* -------------------media----------------- */
+
+@media (min-width: 990px){
+    .logo_redes{
+        display: none;
+    }
+
+    .menu_principal{
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .menu_principal_desktop{
+        display: none;
+    }
+
+    .logo_menu img {
+        width: 150px;
+
+    }
+}
+
+@media (max-width: 800px){
+
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* ----------------footer-------------     */
+    .footer {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen_footer"
+        "listaF"
+        "logo_redes_footer";
+        justify-content: center;
+    }
+
+    .imagen_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .imagen_footer img {
+        width: 150px;
+        height: 120px;
+    }
+    
+    .listaF {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .logo_redes_footer {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px){
+    .tarjetas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);        
+    }
+}
