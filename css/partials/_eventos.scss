@@ -1,0 +1,40 @@
+.contenedor_eventos {
+    padding-bottom: 3rem;
+
+    .titulo_eventos {
+        color: $secondaryColor;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-family: borel;
+        padding-top: 4rem;
+        font-size: 2rem;
+    }
+
+    .texto_eventos {
+        display: block;
+        color: $secondaryColor;
+        text-align: center;
+        margin: 2rem;
+        font-size: 1.25rem;
+    }
+    
+    .contacto_eventos {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .imagen_eventos {
+        text-align: center;
+        padding: 1rem;
+        width: auto;
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+        
+    }
+}

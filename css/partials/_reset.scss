@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: borel;
+    color: $secondaryColor;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+main {
+    background-image: url("../img/backround.jpg");
+    background-size: cover;
+}

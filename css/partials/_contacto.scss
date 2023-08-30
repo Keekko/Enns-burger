@@ -1,0 +1,42 @@
+.contenedor_contacto {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 3rem;
+
+    .texto_contacto {
+        color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        .logo_redes_contacto {
+
+            a {
+                color: $secondaryColor;
+            }
+            
+        }                
+        
+    }
+
+        
+    }
+
+
+    .formulario_contacto {
+        padding: 3rem;
+        background-color: $mainColor;
+        width: 80%;
+
+        h2 {
+            color: $secondaryColor;
+        }
+
+        .boton_formulario {
+            margin-top: 1rem;
+        }
+    }

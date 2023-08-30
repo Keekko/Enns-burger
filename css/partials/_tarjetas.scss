@@ -1,0 +1,42 @@
+.tarjetas {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3rem;
+
+    .productos {
+
+        &:hover {
+            transform: scale(1.2);
+        }  
+
+        .producto_imagen {
+            width: 100%;
+
+        }
+
+        h4 {
+            display: flex;
+            justify-content: center;
+            color: $secondaryColor;
+            font-family: borel;
+        }
+    }
+
+    @for $item from 1 through 6 {
+        
+        .productos:nth-child(#{$item}){
+            animation-delay: $item*0.2s;
+
+        }
+        
+    }
+}
+
+.swing-in-top-fwd{-webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both}
+
+
+ @-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+

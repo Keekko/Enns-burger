@@ -1,0 +1,21 @@
+.contenedor_nosotros {
+    padding-bottom: 3rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    .imagen_nosotros {
+        width: 100%;
+        height: auto;
+        padding: 3rem;
+    }
+
+    .texto_nosotros {
+        width: 70%;
+        height: auto;
+        color: $secondaryColor;
+        font-weight: 600;
+    }
+    
+}

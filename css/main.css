@@ -6,9 +6,14 @@
     box-sizing: border-box;
 }
 
-h1 {
+.titulo {
     font-family: borel;
     font-size: 3rem;
+    color: white;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
 }
 
 main {
@@ -39,7 +44,6 @@ main {
     width: 100%;
     justify-content: center;
     gap: 20px;
-
 }
 
 .menu_logo_desktop { 
@@ -75,10 +79,6 @@ main {
     height: 100%;
 }
 
-.menu_principal_nav {
-    width: 100%;
-}
-
 .logo_redes {
     font-size: 2rem;
     position: fixed;
@@ -110,18 +110,6 @@ main {
 }
 
 /* ------------------catalogo----------------- */
-
-.titulo {
-    color: white;
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-}
-
-.titulo h1{
-    font-size: 4rem;
-}
 
 .tarjetas {
     height: 100%;

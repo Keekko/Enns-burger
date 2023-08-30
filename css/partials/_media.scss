@@ -1,0 +1,82 @@
+@media (min-width: 990px){
+    header .menu_principal .logo_redes{
+        display: none;
+    }
+
+    .menu_principal{
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    header .menu_principal_desktop{
+        display: none;
+    }
+
+    .logo_menu img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 800px){
+
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* ----------------footer-------------     */
+    .footer {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen_footer"
+        "listaF"
+        "logo_redes_footer";
+        justify-content: center;
+    }
+
+    .imagen_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .imagen_footer img {
+        width: 150px;
+        height: 120px;
+    }
+    
+    .listaF {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .logo_redes_footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedor_nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contenedor_contacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px){
+    .tarjetas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);        
+    }
+}

@@ -1,0 +1,51 @@
+.footer {
+    width: auto;
+    background-color: $mainColor;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen_footer listaF"
+    "imagen_footer logo_redes_footer";
+
+    .imagen_footer {
+        grid-area: imagen_footer;
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    .listaF {
+        grid-area: listaF;
+        list-style-type: none;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+        
+
+        a {
+            transition: all 0.5s;
+            
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+
+    }
+
+    .logo_redes_footer {
+        grid-area: logo_redes_footer;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+
+
+        .lrf {
+            font-size: 2rem;
+            color: grey;
+
+        }
+    }
+}
