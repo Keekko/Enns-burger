@@ -163,6 +163,9 @@ header .menu_principal .logo_redes {
 }
 .contenedor_eventos {
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contenedor_eventos .titulo_eventos {
   color: rgb(255, 255, 255);
@@ -185,15 +188,48 @@ header .menu_principal .logo_redes {
   text-align: center;
   font-size: 1.5rem;
 }
-.contenedor_eventos .imagen_eventos {
-  text-align: center;
-  padding: 1rem;
-  width: auto;
+.contenedor_eventos .galeria {
+  margin-inline: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(10, 5vh);
+  gap: 15px;
 }
-.contenedor_eventos .imagen_eventos img {
+.contenedor_eventos .galeria .eventos1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+.contenedor_eventos .galeria .eventos2 {
+  grid-column: 4/7;
+  grid-row: 1/4;
+}
+.contenedor_eventos .galeria .eventos3 {
+  grid-column: 7/10;
+  grid-row: 1/7;
+}
+.contenedor_eventos .galeria .eventos4 {
+  grid-column: 1/4;
+  grid-row: 4/11;
+}
+.contenedor_eventos .galeria .eventos5 {
+  grid-column: 4/7;
+  grid-row: 4/7;
+}
+.contenedor_eventos .galeria .eventos6 {
+  grid-column: 4/10;
+  grid-row: 7/11;
+}
+.contenedor_eventos .galeria img {
   width: 100%;
-  max-width: 700px;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s;
+}
+.contenedor_eventos .galeria img:hover {
+  transform: scale(1.1);
 }
 
 .contenedor_nosotros {
